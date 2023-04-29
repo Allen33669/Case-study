@@ -1,4 +1,15 @@
+:root {
+  --theme-color: rgba(255, 255, 255, 0.8);
+  --background-color1: rgba(0, 0, 0, 0.8);
+  --background-color2: rgba(0, 0, 0, 0.5);
+  --background-color3: rgba(0, 0, 0, 0.3);
+  --text-color1: rgba(255, 255, 255, 0.8);
+  --text-color2: rgba(255, 255, 255, 0.5);
+  --text-color3: rgba(255, 255, 255, 0.3);
+}
+
 * {
+  box-sizing: border-box;
 	margin: 0;
 }
 
@@ -10,21 +21,21 @@ header {
 }
 
 h1 {
-	color: rgba(255, 255, 255, 0.8);
+	color: var(--text-color1);
 	font-family: 'Abril Fatface';
 	font-size: 96px;
 	text-align: center;
 }
 
 h2 {
-	color: rgba(255, 255, 255, 0.5);
+	color: var(--text-color1);
 	font-family: 'Poppins';
 	font-size: 32px;
 	text-align: center;
 }
 
 h3 {
-	color: rgba(0, 0, 0, 0.8);
+	color: var(--background-color1);
 	font-family: 'Poppins';
 	font-size: 32px;
 	position: relative;
@@ -36,7 +47,7 @@ button {
 	background-color: rgba(0, 0, 255, 1.0);
 	border-style: none;
 	border-radius: 8px;
-	color: rgba(255, 255, 255, 1.0);
+	color: var(--text-color1);
 	font-family: 'Poppins';
 	font-size: 40px;
 	height: 56px;
@@ -55,8 +66,8 @@ a {
 }
 
 .main-content .side-menu {
-	background-color: rgba(0, 0, 0, 0.8);
-	color: rgba(255, 255, 255, 0.3);
+	background-color: var(--background-color1);
+	color: var(--text-color3);
 	font-family: 'Poppins';
 	font-size: 24px;
 	min-width: 200px;
@@ -70,15 +81,15 @@ a {
 }
 
 .main-content .side-menu p:hover {
-color: rgba(255, 255, 255, 0.9);
+color: var(--text-color3);
 }
 
 .main-content .side-menu p:focus {
-color: rgba(255, 255, 255, 0.7);
+color: var(--text-color2);
 }
 
 .main-content .display-content {
-	background-color: rgba(255, 255, 255, 1);
+	background-color: var(--text-color3);
 	height: 100%;
 	overflow: visible;
 	width: 100%;
@@ -128,7 +139,7 @@ vertical bar setting
 
 .vertical-bar a p {
 	background-color: rgba(0, 0, 102, 0.8);
-	color: rgba(255, 255, 255, 1.0);
+	color: var(--text-color1);
 	font-family: georgia;
 	font-size: 56px;
 	margin: 0;
@@ -156,7 +167,7 @@ horizon bar setting
 
 .horizon-bar a p {
 	background-color: rgba(0, 0, 102, 0.8);
-	color: rgba(255, 255, 255, 1.0);
+	color: var(--text-color1);
 	font-family: georgia;
 	font-size: 56px;
 	height: 80px;
@@ -179,7 +190,7 @@ transform menu
 
 .bar1,
 .bar2 {
-	background-color: rgba(0, 0, 0, 1.0);
+	background-color: var(--background-color1);
 	width: 32px;
 	height: 8px;
 	margin-bottom: 24px;
@@ -229,7 +240,7 @@ sidebar-overlay
 }
 
 .sidebar-overlay .sidebar {
-	background-color: rgba(0, 0, 0, 1);
+	background-color: var(--background-color1);
 	height: 500px;
 	position: absolute;
 	transition: 1s;
@@ -238,26 +249,24 @@ sidebar-overlay
 }
 
 .sidebar-overlay .sidebar .menu {
-	background-color: rgba(255, 255, 255, 1.0);
-	display: none;
+	background-color: var(--text-color1);
 	margin: 8px;
 	padding: 8px;
 	position: absolute;
-	width: 118px;
+	width: 0;
 	z-index: 1;
 }
 
 .sidebar-overlay .sidebar .menu a {
-	color: rgba(0, 0, 0, 0.8);
+	color: var(--background-color1);
 	display: block;
-	font-size: 24px;
+	font-size: 0;
 	padding: 32px 0 0 0;
 	text-decoration: none;
 
 }
 
 .sidebar-overlay .sidebar .menu .close-button {
-	font-size: 32px;
 	padding: 0 0 0 0;
 	position: absolute;
 	top: 0;
@@ -282,30 +291,30 @@ sidebar-push
 }
 
 .sidebar-push .sidebar {
-  background-color: rgba(0, 0, 0, 1);
+  background-color: var(--background-color1);
   height: 500px;
   position: absolute;
   transition: 1s;
-  width: 150px;
+  width: 0px;
 }
 
 .sidebar-push .open-sidebar {
-  margin-left: 150px;
+  margin-left: 0px;
   position: relative;
   transition: 1s;
   z-index: 1;
 }
 
 .sidebar-push .sidebar a {
-  color: rgba(255, 255, 255, 1);
+  color: var(--text-color1);
   display: block;
-  font-size: 24px;
+  font-size: 0px;
   padding: 32px 0 0 0;
   text-decoration: none;
 }
 
 .sidebar-push .sidebar .close-button {
-  font-size: 32px;
+  font-size: 0px;
   padding: 0 0 0 0;
   position: absolute;
   top: 0;
@@ -324,7 +333,7 @@ headbar-scroll
 }
 
 .headbar-scroll .headbar{
-  background-color: rgba(0, 0, 0, 1.0);
+  background-color: var(--background-color1);
     display: flex;
   flex-direction: row;
   height: 50px;
@@ -337,7 +346,7 @@ headbar-scroll
 }
 
 .headbar-scroll .headbar a {
-  color: rgba(255, 255, 255, 1.0);
+  color: var(--text-color1);
   font-size: 24px;
   margin: 8px;
   text-decoration: none;
@@ -414,7 +423,7 @@ slide-show
 
 .slide-show .image-frame .prev {
   cursor: pointer;
-  color: rgba(255, 255, 255, 1.0);
+  color: var(--text-color1);
   font-size: 56px;
   position: absolute;
   top: 45%;
@@ -424,7 +433,7 @@ slide-show
 
 .slide-show .image-frame .next {
   cursor: pointer;
-  color: rgba(255, 255, 255, 1.0);
+  color: var(--text-color1);
   font-size: 56px;
   position: absolute;
   top: 45%;
@@ -441,7 +450,7 @@ slide-show
 }
 
 .slide-show .dots .dot{
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: var(--background-color3);
   border-radius: 50%;
   cursor: pointer;
   height: 24px;
@@ -476,7 +485,7 @@ image-zoom
 }
 
 .image-zoom .image-frame .len {
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid var(--text-color2);
   height: 30px;
   position: absolute;
   width: 30px;
@@ -522,7 +531,7 @@ image-magnifier-glass
 }
 
 .image-magnifier-glass .image-frame .len {
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid var(--background-color2);
   height: 30px;
   left: 0;
   overflow: hidden;
@@ -575,7 +584,7 @@ image-comparison-slider
 }
 
 .image-comparison-slider .image-frame .slider {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--background-color2);
   border-radius: 50%;
   cursor: pointer;
   height: 50px;

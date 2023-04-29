@@ -1,86 +1,63 @@
 /*
 main-content
 */
-let sideMenu = document.querySelector(".main-content .side-menu");
-let displayContent = document.querySelector(".display-content");
-let currentDisplay = displayContent.querySelector(".image-zoom");
-let currentDisplay2 = displayContent.querySelector(".image-magnifier-glass");
+let sideMenu = $(".main-content, .side-menu");
+let displayContent = $(".display-content");
+let currentDisplay = displayContent.children(".image-zoom");
+let currentDisplay2 = displayContent.children(".image-magnifier-glass");
 
-sideMenu.querySelector(".drop-ballsM").addEventListener("click", () => {
-  showDisplay(".canvas-frame");
-});
 
-sideMenu.querySelector(".change-barM").addEventListener("click", () => {
-  showDisplay(".change-bar");
-});
+let menuItem = [
+ ".drop-ballsM",
+ ".change-barM", 
+ ".transform-iconM", 
+ ".filter-searchM", 
+ ".sidebar-overlayM", 
+ ".sidebar-pushM", 
+ ".headbar-scrollM", 
+ ".cascading-dropdownM", 
+ ".slide-showM", 
+ ".image-zoomM", 
+ ".image-magnifier-glassM", 
+ ".image-comparison-sliderM", 
+ ".copy-read-clipboardM", 
+ ".checkbox-switchM", 
+ ".svg-frameM", 
+ ".google-chartM"];
+let displayItem = [
+  ".canvas-frame", 
+  ".change-bar", 
+  ".transform-icon", 
+  ".filter-search", 
+  ".sidebar-overlay", 
+  ".sidebar-push", 
+  ".headbar-scroll", 
+  ".cascading-dropdown", 
+  ".slide-show", 
+  ".image-zoom", 
+  ".image-magnifier-glass", 
+  ".image-comparison-slider", 
+  ".copy-read-clipboard", 
+  ".checkbox-switch", 
+  ".svg-frame", 
+  ".google-chart"];
+for (let i = 0; i < menuItem.length; i++){
+  sideMenu.children(menuItem[i]).click(() => {showDisplay(displayItem[i]);});
+}
 
-sideMenu.querySelector(".transform-iconM").addEventListener("click", () => {
-  showDisplay(".transform-icon");
-});
 
-sideMenu.querySelector(".filter-searchM").addEventListener("click", () => {
-  showDisplay(".filter-search");
-});
-
-sideMenu.querySelector(".sidebar-overlayM").addEventListener("click", () => {
-  showDisplay(".sidebar-overlay");
-});
-
-sideMenu.querySelector(".sidebar-pushM").addEventListener("click", () => {
-  showDisplay(".sidebar-push");
-});
-
-sideMenu.querySelector(".headbar-scrollM").addEventListener("click", () => {
-  showDisplay(".headbar-scroll");
-});
-
-sideMenu.querySelector(".cascading-dropdownM").addEventListener("click", () => {
-  showDisplay(".cascading-dropdown");
-});
-
-sideMenu.querySelector(".slide-showM").addEventListener("click", () => {
-  showDisplay(".slide-show");
-});
-
-sideMenu.querySelector(".image-zoomM").addEventListener("click", () => {
-  showDisplay(".image-zoom");
-});
-
-sideMenu.querySelector(".image-magnifier-glassM").addEventListener("click", () => {
-  showDisplay(".image-magnifier-glass");
-});
-
-sideMenu.querySelector(".image-comparison-sliderM").addEventListener("click", () => {
-  showDisplay(".image-comparison-slider");
-});
-
-sideMenu.querySelector(".copy-read-clipboardM").addEventListener("click", () => {
-  showDisplay(".copy-read-clipboard");
-});
-
-sideMenu.querySelector(".checkbox-switchM").addEventListener("click", () => {
-  showDisplay(".checkbox-switch");
-});
-
-sideMenu.querySelector(".svg-frameM").addEventListener("click", () => {
-  showDisplay(".svg-frame");
-});
-
-sideMenu.querySelector(".google-chartM").addEventListener("click", () => {
-  showDisplay(".google-chart");
-});
 
 function showDisplay(currentDisplayClass){
   if (currentDisplay !== undefined){
-    currentDisplay.classList.toggle("displayNone");
+    currentDisplay.toggleClass("displayNone");
   }
 
   if (currentDisplay2 !== undefined) {
-    currentDisplay2.classList.toggle("displayNone");
+    currentDisplay2.toggleClass("displayNone");
     currentDisplay2 = undefined;
   }
-  currentDisplay = displayContent.querySelector(currentDisplayClass)
-  currentDisplay.classList.toggle("displayNone");
+  currentDisplay = displayContent.children(currentDisplayClass)
+  currentDisplay.toggleClass("displayNone");
 }
 
 
@@ -269,10 +246,10 @@ changeBar.start();
 //transform menu
 let transformMenu = {
   start : function(){
-    document.querySelector(".transform-icon").addEventListener("click", transformIcon);
-
+    //document.querySelector(".transform-icon").addEventListener("click", transformIcon);
+    $(".transform-icon").click(transformIcon)
     function transformIcon(){
-      document.querySelector(".transform-icon").classList.toggle("change");
+      $(".transform-icon").toggleClass("change");
     }
   }
 }
@@ -313,20 +290,22 @@ filterSearch.start();
 //sidebar-overlay
 let sidebarOverlay = {
   start : function () {
-    let sidebarOverlay = document.querySelector(".sidebar-overlay");
-    let sidebar = sidebarOverlay.querySelector(".sidebar");
-    let menu = sidebar.querySelector(".menu");
-    sidebarOverlay.querySelector(".open-sidebar").addEventListener("click", openSidebarOverlay);
-    sidebar.querySelector(".close-button").addEventListener("click", closeSidebarOverlay);
+    let sidebarOverlay = $(".sidebar-overlay");
+    let sidebar = sidebarOverlay.children(".sidebar");
+    let menu = sidebar.children(".menu");
+    sidebarOverlay.children(".open-sidebar").click(openSidebarOverlay);
+    menu.children(".close-button").click(closeSidebarOverlay);
 
     function openSidebarOverlay(){
-      sidebar.style.width = "150px";
-      menu.style.display = "block";
+      sidebar.animate({width: "150px", opacity: "1"}, 2000);
+      menu.animate({width: "118px", opacity: "0.8"}, 1000)
+          .children("a").animate({fontSize: "24px"}, 1000);
     }
 
     function closeSidebarOverlay(){
-      sidebar.style.width = "0";
-      menu.style.display = "none";
+      sidebar.animate({width: "0px", opacity: "0"}, 2000);
+      menu.animate({width: "0px", opacity: "0"}, 1000)
+          .children("a").animate({fontSize: "0px"}, 1000);
     }
   }
 }
@@ -336,6 +315,38 @@ sidebarOverlay.start();
 
 
 //sidebar-push
+let sidebarPush = {
+  start : function(){
+    let sidebarPush = $(".sidebar-push");
+    let sidebar = sidebarPush.children(".sidebar");
+    let button = sidebarPush.children(".open-sidebar");
+    sidebar.children(".close-button").click(closeSidebarPush);
+    button.click(openSidebarPush);
+
+    function openSidebarPush(){
+      sidebar.animate({width: "150px"}, 1000);
+      button.animate({marginLeft: "150px"}, 1000);
+      sidebarPush.animate({backgroundColor: "rgba(0, 0, 0, 0.3)"}, 2000);
+      sidebar.children("a").animate({fontSize: "24px"}, 1000);
+      //sidebar.style.width = "150px";
+      //button.style.marginLeft = "150px";
+      //sidebarPush.style.backgroundColor = "rgba(0, 0, 0, 0.3)";
+    }
+
+    function closeSidebarPush(){
+      sidebar.animate({width: "0px"}, 1000);
+      button.animate({marginLeft: "0px"}, 1000);
+      sidebarPush.animate({backgroundColor: "rgba(255, 255, 255, 0.3)"}, 2000);
+      sidebar.children("a").animate({fontSize: "0px"}, 1000);
+      //sidebar.style.width = "0";
+      //button.style.marginLeft = "0";
+      //sidebarPush.style.backgroundColor = "";
+    }
+  }
+}
+
+sidebarPush.start();
+/*
 let sidebarPush = {
   start : function(){
     let sidebarPush = document.querySelector(".sidebar-push");
@@ -359,7 +370,7 @@ let sidebarPush = {
 }
 
 sidebarPush.start();
-
+*/
 
 
 /*
