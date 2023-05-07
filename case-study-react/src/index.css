@@ -1,0 +1,26 @@
+:root {
+  --theme-color: rgba(255, 255, 255, 0.8);
+  --background-color1: rgba(0, 0, 0, 0.8);
+  --background-color2: rgba(0, 0, 0, 0.5);
+  --background-color3: rgba(0, 0, 0, 0.3);
+  --text-color1: rgba(255, 255, 255, 0.8);
+  --text-color2: rgba(255, 255, 255, 0.5);
+  --text-color3: rgba(255, 255, 255, 0.3);
+  --text-color33: rgba(255, 255, 255, 1);
+  --text-font1: "georgia";
+  --text-font2: "arial";
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.body {
+  height: 300px;
+  width: 100%;
+}

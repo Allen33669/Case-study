@@ -1,0 +1,58 @@
+.body {
+	background-image: url("https://magdeleine.co/wp-content/uploads/2022/07/14365468511_7f7f70d739_o-1400x933.jpg");
+	background-attachment: fixed;
+	height: 1000px;
+	top: 24px;
+	padding-left : 20%;
+	padding-right: 20%;
+	position: relative;
+}
+
+.body p {
+	font-family: var(--text-font1);
+	font-size: 24px;
+}
+
+.cursor-hand {
+  cursor: pointer;
+}
+
+#AutocompleteCase, #InputValidationCase {
+	background-color: var(--text-color33);
+}
+
+#InputValidationCase-helper-text {
+	color: var(--text-color33);
+}
+
+#TableCase {
+  background-color: var(--text-color33);
+}
+
+#TableCase p {
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 1200px) {
+	.body {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+
+	.body p {
+		font-family: var(--text-font1);
+		font-size: 24px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.body {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.body p {
+		font-family: var(--text-font1);
+		font-size: 24px;
+	}
+}

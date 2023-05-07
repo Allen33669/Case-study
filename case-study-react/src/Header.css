@@ -1,0 +1,16 @@
+.header {
+  align-items: center;
+  background-image: url("https://magdeleine.co/wp-content/uploads/2022/08/icelandic-fields-nature-1400x933.jpg");
+  background-attachment: fixed;
+  color: var(--text-color1);
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  justify-content: center;
+  width: 100%;
+}
+
+.header h1 {
+  color: var(--text-color1);
+  font-size: 60px;
+}
