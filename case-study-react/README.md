@@ -1,4 +1,4 @@
-<h1>node.js react</h1><br>
+<h1>react</h1><br>
 
 <h1>Some interesting react gadgets:</h1><br>
 
