@@ -1,0 +1,44 @@
+#cswp-setting {
+	height: 800px;
+	width: 100%;
+	background-image: url(https://magdeleine.co/wp-content/uploads/2019/10/48920131698_f77fcb9b6e_o-1400x933.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat; 
+    background-size: cover;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+#cswp-setting #cswp-setting-header {
+	color: rgba(255, 255, 255, 0.8);
+	font-size: 36px;
+	text-shadow: 2px 2px 5px #939393;
+	margin-top: 36px;
+	margin-left: 100px;
+}
+
+#cswp-setting #cswp-form-footer-content {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	margin-left: 100px;
+	width: 50%;
+	min-width: 500px;
+}
+
+#cswp-setting #cswp-form-footer-content #cswp-form-footer-content-text {
+	width: 50%;
+	min-width: 500px;
+	margin-bottom: 16px;
+}
+
+#cswp-setting #cswp-form-footer-content #cswp-form-footer-content-city {
+	width: 50%;
+	min-width: 500px;
+}
+
+#cswp-setting #cswp-form-footer-content #cswp-form-footer-content-submit {
+	margin-top: 32px;
+	width: 120px;
+}
