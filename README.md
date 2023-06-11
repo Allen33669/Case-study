@@ -8,16 +8,16 @@
 <h5>fix refresh kanban board bug</h5>
 <h3>1.0.0: </h3>
 <h5>simple kanban board with simple plugin</h5>
-
+<br>
 <h2>caseStudyWordPress:</h2>
 <h3>WordPress react without jsx</h3><br>
-
+<br>
 <h2>case_study_php:</h2>
 <h3>react PHP</h3><br>
-
+<br>
 <h2>case-study-react:</h2>
 <h3>react</h3><br>
-
+<br>
 <h2>case_study:</h2>
 <h3>html, css, javascript</h3><br>
 
