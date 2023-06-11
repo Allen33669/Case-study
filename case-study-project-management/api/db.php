@@ -15,7 +15,7 @@ class DBOperate
 	function __construct()
 	{
 		$this->servername = "localhost";
-		$this->dbname = "case-study-project-management";
+		$this->dbname = "case_study_project_management";
 		$this->username = "root";
 		$this->password = "root";
 		$this->port = 10001;
