@@ -16,6 +16,7 @@
 <h5>kanban board sandbox with google cloud run</h5>
 <h5>server with google compute engine</h5>
 <h5>fix refresh kanban board bug</h5>
+<br>
 <h3>1.0.0: </h3>
 <h5>simple kanban board with simple plugin</h5>
 <br>
