@@ -4,7 +4,7 @@
 <h5>multiple user login with different browser and edit the same kanban board, real time change</h5>
 <h5>tutorial with mouse hover autoplay video card</h5>
 <h5>add 404 webpage</h5>
-<h5>virtual host cspm2 in the same server</h5>
+<h5>virtual host cspm2 in the same server with google compute engine</h5>
 <h5>compression text/html and etc., simple memory cache with time limit</h5>
 <br>
 <h3>1.1.1: </h3>
