@@ -1,4 +1,6 @@
 <h1>case-study-project-management:</h1>
+<h3>new features: please refer to main page</h3>
+<br>
 <h3>2.1.0: demo video only cspmProxyServeLoadBalanceScaleR.mp4 (video quality is not good because of file size limit)</h3>
 <h5>react, node.js</h5>
 <h5>proxy server with load balancing, algorithm: Round robin</h5>
