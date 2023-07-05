@@ -1,5 +1,11 @@
 <h1>Personal portfolio space:</h1>
 <h2>case-study-project-management:</h2>
+<h3>2.2.0: demo video only cspmApacheSparkKmeansRecommenedR.mp4 (video quality is not good because of file size limit)</h3>
+<h5>react, apache spark pyspark, python flask</h5>
+<h5>simple recommened books, algorithm: k-means</h5>
+<h5>process and transform data, train model: apache spark pyspark MLlib</h5>
+<h5>simple web service for recommened books with trained model: apache spark pyspark MLlib python flask</h5>
+<br>
 <h3>2.1.0: demo video only cspmProxyServeLoadBalanceScaleR.mp4 (video quality is not good because of file size limit)</h3>
 <h5>react, node.js</h5>
 <h5>proxy server with load balancing, algorithm: Round robin</h5>
