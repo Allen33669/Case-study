@@ -1,5 +1,33 @@
 <h1>Personal portfolio space:</h1>
 <h2>case-study-project-management:</h2>
+<h3>2.3.0: </h3>
+<h5>aws ec2, aws application load balaner, aws ec2 auto scaling</h5>
+<h5>apache jmeter</h5>
+<h5>change database to mysql</h5>
+<h5>performance test (folder: performance_test\2_3_0):</h5>
+<h5>  website: aws ec2, aws application load balaner, aws ec2 auto scaling</h5>
+<h5>  test tools and results:</h5>
+<h5>    local laptop with apache jmeter:</h5>
+<h5>      If Controller</h5>
+<h5>      sampler http request</h5>
+<h5>      Retrieve All Embedded Resources, URLs must match</h5>
+<h5>      sampler http request</h5>
+<h5>      HTTP Header Manager</h5>
+<h5>      Response Assertion</h5>
+<h5>      Constant Timer</h5>
+<h5>      Generate HTML report</h5>
+<h5>    result: 
+<h5>      aws_6_ec2_response_time.png</h5>
+<h5>      aws_6_ec2_response_time_distribution.png</h5>
+<h5>      aws_6_ec2_response_time_overview.png</h5>
+<h5>    Grafana: </h5>
+<h5>      grafana_aws_1_ec2.png</h5>
+<h5>      grafana_aws_6_ec2.png</h5>
+<h5>      grafana_aws_load_balancer_auto_scaling_1_to_6_ec2_1.png: the original ec2 instance stops to response before ec2 auto scaling</h5>
+<h5>      grafana_aws_load_balancer_auto_scaling_1_to_6_ec2_2.png</h5>
+<h5>      grafana_aws_load_balancer_auto_scaling_1_to_6_ec2_3.png</h5>
+<h5>      grafana_aws_load_balancer_auto_scaling_1_to_6_ec2_31.png</h5>
+<br>
 <h3>2.2.0: demo video only cspmApacheSparkKmeansRecommenedR.mp4 (video quality is not good because of file size limit)</h3>
 <h5>react, apache spark pyspark, python flask</h5>
 <h5>simple recommened books, algorithm: k-means</h5>
