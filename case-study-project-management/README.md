@@ -1,5 +1,38 @@
-<h1>case-study-project-management:</h1>
-<h3>new features: please refer to main page</h3>
+<h1>Personal portfolio space:</h1>
+<h2>case-study-project-management:</h2>
+<h3>2.3.0: </h3>
+<h5>aws ec2, aws application load balaner, aws ec2 auto scaling</h5>
+<h5>apache jmeter</h5>
+<h5>change database to mysql</h5>
+<h5>performance test (folder: performance_test\2_3_0):</h5>
+<h5>  website: aws ec2, aws application load balaner, aws ec2 auto scaling</h5>
+<h5>  test tools and results:</h5>
+<h5>    local laptop with apache jmeter:</h5>
+<h5>      If Controller</h5>
+<h5>      sampler http request</h5>
+<h5>      Retrieve All Embedded Resources, URLs must match</h5>
+<h5>      sampler http request</h5>
+<h5>      HTTP Header Manager</h5>
+<h5>      Response Assertion</h5>
+<h5>      Constant Timer</h5>
+<h5>      Generate HTML report</h5>
+<h5>    result: 
+<h5>      aws_6_ec2_response_time.png</h5>
+<h5>      aws_6_ec2_response_time_distribution.png</h5>
+<h5>      aws_6_ec2_response_time_overview.png</h5>
+<h5>    Grafana: </h5>
+<h5>      grafana_aws_1_ec2.png</h5>
+<h5>      grafana_aws_6_ec2.png</h5>
+<h5>      grafana_aws_load_balancer_auto_scaling_1_to_6_ec2_1.png: the original ec2 instance stops to response before ec2 auto scaling</h5>
+<h5>      grafana_aws_load_balancer_auto_scaling_1_to_6_ec2_2.png</h5>
+<h5>      grafana_aws_load_balancer_auto_scaling_1_to_6_ec2_3.png</h5>
+<h5>      grafana_aws_load_balancer_auto_scaling_1_to_6_ec2_31.png</h5>
+<br>
+<h3>2.2.0: demo video only cspmApacheSparkKmeansRecommenedR.mp4 (video quality is not good because of file size limit)</h3>
+<h5>react, apache spark pyspark, python flask</h5>
+<h5>simple recommened books, algorithm: k-means</h5>
+<h5>process and transform data, train model: apache spark pyspark MLlib</h5>
+<h5>simple web service for recommened books with trained model: apache spark pyspark MLlib python flask</h5>
 <br>
 <h3>2.1.0: demo video only cspmProxyServeLoadBalanceScaleR.mp4 (video quality is not good because of file size limit)</h3>
 <h5>react, node.js</h5>
@@ -23,10 +56,22 @@
 <h5>kanban board sandbox with google cloud run</h5>
 <h5>server with google compute engine</h5>
 <h5>fix refresh kanban board bug</h5>
-<h5>import kanban board workflow: upload kanban board file, update sandbox to check the result, if the result is okay, then update kanban board</h5>
-<h5>demo: cspmExportImportKanbanBoardAndSandBoxDemoR.mp4, cspmImportBrokenKanbanBoardAndSandBoxDemo.mp4</h5>
 <br>
 <h3>1.0.0: </h3>
 <h5>simple kanban board with simple plugin</h5>
-<h5>demo: caseStudyProjectManagementDemoR.mp4</h5>
+<br>
+<h2>caseStudyWordPress:</h2>
+<h3>WordPress react without jsx</h3><br>
+<br>
+<h2>case_study_php:</h2>
+<h3>react PHP</h3><br>
+<br>
+<h2>case-study-react:</h2>
+<h3>react</h3><br>
+<br>
+<h2>case_study:</h2>
+<h3>html, css, javascript</h3><br>
+
+
+
 
