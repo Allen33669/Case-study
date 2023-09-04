@@ -1,5 +1,9 @@
 <h1>Personal portfolio space:</h1>
 <h2>case-study-project-management:</h2>
+<h3>3.0.0: demo video only cspmNestjsJWTR.mp4 (video quality is not good because of file size limit)</h3>
+<h5>Nest.js</h5>
+<h5>JWT</h5>
+<br>
 <h3>2.5.0: demo video only cspmAwsRDSForMySQLR.mp4 (video quality is not good because of file size limit)</h3>
 <h5>aws RDS for MySQL</h5>
 <h5>change database to aws RDS for MySQL</h5>
