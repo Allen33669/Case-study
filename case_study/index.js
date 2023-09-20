@@ -1,6 +1,9 @@
 /*
 main-content
 */
+
+//
+
 let sideMenu = $(".main-content, .side-menu");
 let displayContent = $(".display-content");
 let currentDisplay = displayContent.children(".image-zoom");
