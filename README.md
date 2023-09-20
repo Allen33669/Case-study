@@ -1,9 +1,13 @@
 <h1>Personal portfolio space:</h1>
 <h2>case-study-project-management:</h2>
+<h3>3.2.0: demo video only cspmNestjsJWTGraphQLR.mp4 (video quality is not good because of file size limit)</h3>
+<h5>simple GraphQL with JWT. Apollo client in React, Apollo server in Nest.js</h5>
+<h5>Mongodb Atlas, Mongoose</h5>
+<br>
 <h3>3.1.0: demo video only cspmNestjsJWTMongodbAtlasR.mp4 (video quality is not good because of file size limit)</h3>
 <h5>Nest.js </h5>
 <h5>JWT with short time limit</h5>
-<h5>Mongodb Atlas</h5>
+<h5>Mongodb Atlas, Mongoose</h5>
 <br>
 <h3>3.0.0: demo video only cspmNestjsJWTR.mp4 (video quality is not good because of file size limit)</h3>
 <h5>Nest.js </h5>
