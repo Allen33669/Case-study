@@ -1,5 +1,15 @@
 <h1>Personal portfolio space:</h1>
 <h2>case-study-project-management:</h2>
+<h3>3.3.0: demo video only cspmGroupR1.mp4, cspmGroupR2.mp4, cspmGroupR3.mp4 (video quality is not good because of file size limit)</h3>
+<h5>cross server real time change</h5>
+<h5>group kanban board</h5>
+<h5>group management:</h5>
+<h5>  create group</h5>
+<h5>  delete group</h5>
+<h5>  add group member</h5>
+<h5>  delete group member</h5>
+<h5>  leave group</h5>
+<br>
 <h3>3.2.0: demo video only cspmNestjsJWTGraphQLR.mp4 (video quality is not good because of file size limit)</h3>
 <h5>simple GraphQL with JWT. Apollo client in React, Apollo server in Nest.js</h5>
 <h5>Mongodb Atlas, Mongoose</h5>
