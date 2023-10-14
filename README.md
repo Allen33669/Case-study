@@ -1,5 +1,9 @@
 <h1>Personal portfolio space:</h1>
 <h2>case-study-project-management:</h2>
+<h3>3.5.0: demo video only cspmSelectedGroupMessageAndEmitterR.mp4 (video quality is not good because of file size limit)</h3>
+<h5>message to all clients: emitter</h5>
+<h5>message to selected group</h5>
+<br>
 <h3>3.3.0: demo video only cspmGroupR1.mp4, cspmGroupR2.mp4, cspmGroupR3.mp4 (video quality is not good because of file size limit)</h3>
 <h5>cross server real time change</h5>
 <h5>group kanban board</h5>
