@@ -1,5 +1,8 @@
 <h1>Personal portfolio space:</h1>
 <h2>case-study-project-management:</h2>
+<h3>3.7.0: demo video only cspmScheduleServiceR1.mp4, cspmScheduleServiceR2.mp4 (video quality is not good because of file size limit)</h3>
+<h5>schedule service</h5>
+<br>
 <h3>3.6.0: demo video only cspmAuthorizationR.mp4 (video quality is not good because of file size limit)</h3>
 <h5>simple authorization</h5>
 <h5>improve task flow</h5>
