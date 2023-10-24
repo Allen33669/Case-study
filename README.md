@@ -1,5 +1,8 @@
 <h1>Personal portfolio space:</h1>
 <h2>case-study-project-management:</h2>
+<h3>3.9.0: demo video only cspmSessionRecordR.mp4 (video quality is not good because of file size limit)</h3>
+<h5>session record</h5>
+<br>
 <h3>3.8.0: demo video only cspmTaskQueueR1.mp4, cspmTaskQueueR2.mp4, cspmTaskQueueR3.mp4 (video quality is not good because of file size limit)</h3>
 <h5>task queue</h5>
 <br>
