@@ -1,5 +1,10 @@
 <h1>Personal portfolio space:</h1>
 <h2>case-study-project-management:</h2>
+<h3>6.0.0: demo: cspm2FAR.mp4, cspm2FASignInWithGoogleButton1.png, cspm2FASignInWithGoogleButton2.png, cspm2FATOTP.png, cspm2FALogin.png (video quality is not good because of file size limit)</h3>
+<h5>Sign in with google button</h5>
+<h5>TOTP</h5>
+<h5>log in process: sign in with google account, verify TOTP (TOTP can be sent to other program, device, and etc.)</h5>
+<br>
 <h3>5.0.0: demo video only cspmSSOR.mp4 (video quality is not good because of file size limit)</h3>
 <h5>simple SSO</h5>
 <br>
